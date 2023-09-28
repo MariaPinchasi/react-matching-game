@@ -16,24 +16,20 @@ export const imgData = [
         isCorrect: true,
     },
     {
+        src: dog,
+        text: 'dog',
+        isCorrect: true,
+    },
+    {
         src: elephant,
         text: 'dog',
         isCorrect: false,
     },
-    {
-        src: dog,
-        text: 'dog',
-        isCorrect: true,
-    },
+
     {
         src: dog,
         text: 'fish',
         isCorrect: false,
-    },
-    {
-        src: fish,
-        text: 'fish',
-        isCorrect: true,
     },
     {
         src: fish,
@@ -44,6 +40,11 @@ export const imgData = [
         src: giraffe,
         text: 'giraffe',
         isCorrect: true,
+    },
+    {
+        src: horse,
+        text: 'lion',
+        isCorrect: false,
     },
     {
         src: giraffe,
@@ -53,6 +54,11 @@ export const imgData = [
     {
         src: cat,
         text: 'cat',
+        isCorrect: true,
+    },
+    {
+        src: fish,
+        text: 'fish',
         isCorrect: true,
     },
     {
@@ -66,43 +72,38 @@ export const imgData = [
         isCorrect: true,
     },
     {
-        src: horse,
-        text: 'lion',
-        isCorrect: false,
-    },
-    {
         src: lion,
         text: 'lion',
-        isCorrect: true,
-    },
-    {
-        src: lion,
-        text: 'monkey',
-        isCorrect: false,
-    },
-    {
-        src: monkey,
-        text: 'monkey',
-        isCorrect: true,
-    },
-    {
-        src: monkey,
-        text: 'panda',
-        isCorrect: false,
-    },
-    {
-        src: panda,
-        text: 'panda',
         isCorrect: true,
     },
     {
         src: panda,
         text: 'parrot',
         isCorrect: false,
+    },
+    {
+        src: lion,
+        text: 'monkey',
+        isCorrect: false,
+    },
+    {
+        src: monkey,
+        text: 'panda',
+        isCorrect: false,
+    },
+    {
+        src: panda,
+        text: 'panda',
+        isCorrect: true,
     },
     {
         src: parrot,
         text: 'parrot',
+        isCorrect: true,
+    },
+    {
+        src: monkey,
+        text: 'monkey',
         isCorrect: true,
     },
     {

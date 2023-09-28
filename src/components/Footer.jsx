@@ -1,5 +1,5 @@
 import correctImg from '../assets/correct.png'
-import inCorrectImg from '../assets/InCorrect.png'
+import inCorrectImg from '../assets/notCorrect.png'
 const Footer = ({ correctPressed, inCorrectPressed }) => {
     return (
         <footer className='bottom-menu'>
