@@ -1,0 +1,54 @@
+/* reset */
+*{
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+}
+.body{
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+  background-color: rgb(181, 215, 114);
+  max-width: 1920rem;
+  height: 100vh;
+}
+.top-menu, .bottom-menu{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 50rem;
+}
+.top-menu div{
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+
+h4{
+  font-size: 2rem;
+  font-weight: bold;
+  color: grey;
+  padding: 1rem;
+}
+h2{
+  color: green;
+  text-transform: capitalize;
+
+}
+.central-img{
+  margin: 0 auto;
+  text-align: center;
+}
+.central-img img{
+  width: 30rem;
+  height: 20rem;
+  border-radius: 3rem;
+  border: 0.5rem green solid;
+}
+.bottom-menu img{
+  width: 4rem;
+  height: 4rem;
+  cursor: pointer;
+}
