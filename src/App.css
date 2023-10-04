@@ -52,3 +52,10 @@ h2{
   height: 4rem;
   cursor: pointer;
 }
+
+.game-over{
+  font-size: 3rem;
+  font-weight: 800;
+  text-align: center;
+  padding-top: 5rem;
+}

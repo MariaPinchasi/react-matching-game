@@ -13,11 +13,12 @@ function App() {
   const [countCorrect, setCountCorrect] = useState(0);
   const [countInCorrect, setCountInCorrect] = useState(0);
   const [displayedImg, setDisplayedImg] = useState(0);
+  const [isGameOver, setIsGameOver] = useState(false);
 
   const { src, text, isCorrect } = imgData[displayedImg];
 
-  function correctPressed() {
-    if (isCorrect) {
+  function btnPressed(btnType) {
+    if (isCorrect && btnType === 'correct-btn' || !isCorrect && btnType === 'inCorrect-btn') {
       setCountCorrect((countCorrect) => countCorrect + 1)
     }
     else {
@@ -25,16 +26,6 @@ function App() {
     }
     nextImg();
 
-  }
-
-  function inCorrectPressed() {
-    if (!isCorrect) {
-      setCountCorrect((countCorrect) => countCorrect + 1)
-    }
-    else {
-      setCountInCorrect((countInCorrect) => countInCorrect + 1)
-    }
-    nextImg();
   }
 
   function nextImg() {
@@ -42,19 +33,27 @@ function App() {
       setDisplayedImg((displayedImg) => displayedImg + 1);
     }
     else {
-      setDisplayedImg(0);
+      setIsGameOver(true);
     }
   };
+  if (!isGameOver) {
+    return (
+      <main className='container'>
+        <Header countCorrect={countCorrect} countInCorrect={countInCorrect} />
+        <Central src={src} text={text} />
+        <Footer btnPressed={btnPressed} />
+      </main>
+    )
+  }
+  else {
+    return (
+      <main className='container'>
+        <p className='game-over'>Game Over</p>
+        <p className='game-over'>{`${countCorrect} correct answers`}</p>
+      </main>
+    )
+  }
 
-  return (
-
-    <main className='container'>
-      <Header countCorrect={countCorrect} countInCorrect={countInCorrect} />
-      <Central src={src} text={text} />
-      <Footer correctPressed={correctPressed} inCorrectPressed={inCorrectPressed} />
-    </main>
-
-  )
 }
 
 export default App
